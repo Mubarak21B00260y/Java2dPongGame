@@ -1,10 +1,10 @@
-import java.awt.*;
+
 
 public class Main {
     public static void main(String[] args) {
-        Window window = new GameWindow();
+        GameWindow window = new GameWindow();
 
-        Thread thread = new Thread();
+        Thread thread = new Thread(window);
         thread.start();
 
 
